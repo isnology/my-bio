@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-grid {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.flex-grid .col {
+  flex: 1;
+}
+
+@media (min-width: 320px) {
+  .flex-grid {
+    flex-direction: row;
+  }
+  
+  .tabs {
+    display: none;
+  }
+  
+  .padding {
+    display: none;
+  }
+}
+
+@media (min-width: 768pt) {
+  .main {
+    display: flex;
+    width: auto;
+  }
+  
+  .col {
+    /* take into acount margin of 2px on each side */
+    width: calc((100vw - (7 * 4px)) / 7);
+  }
+  
+}
