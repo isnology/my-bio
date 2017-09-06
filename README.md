@@ -11,5 +11,10 @@ Design Resources
 - [Test idea 1 - Codepen](https://codepen.io/grmarks/pen/jLdRLX?editors=1100)
 - [Test idea 2 - Codepen](https://codepen.io/grmarks/pen/EvMaWx?editors=1100)
 
+Installing Node.js to run Gulp to run postcss
+-
+- [Gulp & Node install](http://www.hongkiat.com/blog/getting-started-with-gulp-js/)
+- [postcss install](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/)
+
              
  
