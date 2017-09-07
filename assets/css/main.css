@@ -61,6 +61,8 @@ section {
   & h1 {
     font-family: 'Tauri', sans-serif;
     padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 8px;
     border-bottom: 3px solid var(--green);
     width: 6em;
     color: var(--headc);
@@ -128,6 +130,10 @@ section {
   .main {
     margin-top: 350px;
 
+    & h1 {
+      margin-bottom: 12px;
+    }
+    
     & div {
       lost-center: 700px;
     }
@@ -138,4 +144,18 @@ section {
     }
   }
   
+}
+
+@media (min-width: 1024px) {
+  .main {
+    & div {
+      lost-center: 900px;
+    }
+    
+    & p {
+      max-width: 900px;
+      font-size: 130%;
+    }
+  
+  }
 }

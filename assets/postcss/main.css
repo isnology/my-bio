@@ -101,6 +101,8 @@ section:after {
 .main h1 {
   font-family: 'Tauri', sans-serif;
   padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 8px;
   border-bottom: 3px solid #89937C;
   width: 6em;
   color: #5D4B52;
@@ -204,6 +206,10 @@ section:after {
     margin-top: 350px
   }
   
+  .main h1 {
+    margin-bottom: 12px;
+  }
+  
   .main div {
     max-width: 700px;
     margin-left: auto;
@@ -226,4 +232,25 @@ section:after {
     font-size: 120%;
   }
   
+}
+
+@media (min-width: 1024px) {
+  .main div {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main div:before {
+    content: '';
+    display: table;
+  }
+  .main div:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .main p {
+    max-width: 900px;
+    font-size: 130%;
+  }
 }
