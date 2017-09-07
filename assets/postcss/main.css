@@ -29,6 +29,7 @@ section:after {
 
 .header {
   font-family: 'Advent Pro', sans-serif;
+  font-weight: bold;
   width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
   text-align: center;
   color: #5D4B52
@@ -48,15 +49,21 @@ section:after {
   float: right
 }
 
+.header .medium {
+  display: none;
+}
+
 .header h1 {
   font-size: 60pt;
   padding: 10px;
+  font-weight: bold;
 }
 
 .header h3 {
   font-size: 20pt;
   padding: 10px;
   color: #89937C;
+  font-weight: bold;
 }
 
 .main {
@@ -132,6 +139,25 @@ section:after {
   float: right;
 }
 
+#menu {
+  display: none;
+}
+
+#menu ~ .menu {
+  display: none;
+}
+
+#menu:checked ~ .menu {
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 200px;
+  top: 5px;
+  left: 5px;
+  background: #C7AF8E;
+  z-index: 10;
+}
+
 .hamberger {
   float: right;
   width: 20px;
@@ -152,20 +178,28 @@ section:after {
     width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
     height: 30px;
     background: #89937C
+    
+    
   }
   .header:nth-child(1n) {
     float: left;
     margin-right: 30px;
     clear: none
+    
+    
   }
   .header:last-child {
     margin-right: 0
+    
+    
   }
   .header:nth-child(0n) {
     float: right
+    
+    
   }
   .header div {
-    width: calc(99.9% * 2/4 - (30px - 30px * 2/4));
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
     padding-top: 50px;
   }
   .header div:nth-child(1n) {
@@ -176,21 +210,26 @@ section:after {
   .header div:last-child {
     margin-right: 0;
   }
-  .header div:nth-child(3n) {
+  .header div:nth-child(1n) {
     margin-right: 0;
     float: right;
   }
-  .header div:nth-child(3n + 1) {
+  .header div:nth-child(1n + 1) {
     clear: both;
   }
-  .header .first {
-    text-align: right;
+  .header .small {
+    display: none;
   }
-  .header .last {
-    text-align: left;
+  .header .medium {
+    display: block;
   }
-  .header div:nth-child(4n) {
+  .header h3 {
     float: right;
+    margin-right: 8%;
+  }
+
+  #menu:checked ~ .menu {
+    display: none;
   }
   
   .hamberger {
