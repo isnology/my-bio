@@ -1,3 +1,15 @@
+body {
+  background: #C7AF8E;
+}
+
+.pic {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 * {
   margin: 0;
@@ -16,8 +28,7 @@ section:after {
 }
 
 .header {
-  width: calc(99.9% * 1/5 - (30px - 30px * 1/5));
-  background: red;
+  width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
   
 }
 
@@ -46,31 +57,37 @@ section:after {
 
 .main {
   width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
-  background: yellow;
+  color: #F2F2F2
 }
 
 .main:nth-child(1n) {
   float: left;
   margin-right: 30px;
-  clear: none;
+  clear: none
 }
 
 .main:last-child {
-  margin-right: 0;
+  margin-right: 0
 }
 
 .main:nth-child(1n) {
   margin-right: 0;
-  float: right;
+  float: right
 }
 
 .main:nth-child(1n + 1) {
-  clear: both;
+  clear: both
+}
+
+.main h1 {
+  padding-left: 5px;
+  border-bottom: 3px solid #89937C;
+  width: 5em;
+  color: #5D4B52;
 }
 
 .footer {
   width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
-  background: orange;
 }
 
 .footer:nth-child(1n) {
@@ -93,8 +110,10 @@ section:after {
 }
 
 .hamberger {
+  float: right;
   width: 20px;
-  padding: 5px
+  padding: 5px;
+  z-index: 5
 }
 
 .hamberger .hamberger-bar {
@@ -144,27 +163,6 @@ section:after {
 
 @media (min-width: 400px) {
   .header{
-    width: calc(99.9% * 1/7 - (30px - 30px * 1/7));
-  }
-  .header:nth-child(1n){
-    float: left;
-    margin-right: 30px;
-    clear: none;
-  }
-  .header:last-child{
-    margin-right: 0;
-  }
-  .header:nth-child(1n){
-    margin-right: 0;
-    float: right;
-  }
-  .header:nth-child(1n + 1){
-    clear: both;
-  }
-}
-
-@media (min-width: 768pt) {
-  .header{
     width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
     height: 30px;
     background: #89937C;
@@ -187,4 +185,8 @@ section:after {
   .hamberger {
     display: none;
   }
+}
+
+@media (min-width: 768pt) {
+
 }
