@@ -1,47 +1,60 @@
+:root {
+  --green: #89937C;
+  --bar: #5D4B52;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.flex-grid {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-}
-
-.flex-grid .col {
-  flex: 1;
-}
-
 .header {
-  align-self: flex-end;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  background: lightgray;
+  /*justify-items: end;*/
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background: yellow;
+  padding: 5px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  background: orange;
+  padding: 5px;
 }
 
 .hamberger {
-  padding: 3px;
+  display: block;
+  grid-column: 10 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: end;
   width: 20px;
-  height: 5px;
+  padding: 5px;
+
+  .hamberger-bar {
+    display: block;
+    margin: 2px;
+    width: 20px;
+    height: 4px;
+    background: var(--bar);
+  }
 }
 
+
 @media (min-width: 320px) {
-  .flex-grid {
-    flex-direction: row;
-  }
-  
-  .tabs {
-    display: none;
-  }
-  
-  .padding {
-    display: none;
-  }
+
 }
 
 @media (min-width: 768pt) {
-  .main {
-    display: flex;
-    width: auto;
-  }
   
   .col {
     /* take into acount margin of 2px on each side */
