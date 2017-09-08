@@ -129,8 +129,27 @@ section {
 }
 
 footer {
-  lost-column: 1/1 0;
+  lost-center: 400px;
+  
+  
+  & div {
+      lost-column: 1/1 0;
+      margin-top: 10px;
+      border-top: 3px solid var(--green);
+    }
+  
+  & form p {
+    padding: 5px;
+  }
+  
+  & button {
+      display: block;
+      width: 5em;
+      height: 2em;
+    }
+ 
 }
+
 
 #menu, #menu ~ .menu {
   display: none;
@@ -253,12 +272,14 @@ footer {
     & p {
       max-width: 700px;
       font-size: 120%;
+      line-height: 130%;
     }
   }
 
   p {
     max-width: 700px;
     font-size: 120%;
+    line-height: 130%;
   }
   
   .main2 {
@@ -277,11 +298,13 @@ footer {
     & p {
       max-width: 900px;
       font-size: 130%;
+      line-height: 150%;
     }
   }
   p {
     max-width: 900px;
     font-size: 130%;
+    line-height: 150%;
   }
   .main2 {
     & div {
