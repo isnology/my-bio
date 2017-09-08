@@ -320,6 +320,7 @@ footer:nth-child(0n) {
     margin-right: 8%;
   }
  
+  #menu:checked ~ .menu,
   #menu ~ .menu {
     display: inline-block;
     position: absolute;
@@ -330,25 +331,25 @@ footer:nth-child(0n) {
     z-index: 10
   }
  
-  #menu ~ .menu div {
+  #menu:checked ~ .menu div, #menu ~ .menu div {
     width: calc(99.9% * 1/5 - (30px - 30px * 1/5));
   }
  
-  #menu ~ .menu div:nth-child(1n) {
+  #menu:checked ~ .menu div:nth-child(1n), #menu ~ .menu div:nth-child(1n) {
     float: left;
     margin-right: 30px;
     clear: none;
   }
  
-  #menu ~ .menu div:last-child {
+  #menu:checked ~ .menu div:last-child, #menu ~ .menu div:last-child {
     margin-right: 0;
   }
  
-  #menu ~ .menu div:nth-child(0n) {
+  #menu:checked ~ .menu div:nth-child(0n), #menu ~ .menu div:nth-child(0n) {
     float: right;
   }
  
-  #menu ~ .menu div a {
+  #menu:checked ~ .menu div a, #menu ~ .menu div a {
     display: block;
     width: 100px;
     height: 29px;
