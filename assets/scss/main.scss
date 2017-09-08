@@ -23,10 +23,77 @@ body {
 }
 
 .page {
-//  lost-utility: clearfix;
-  max-width: 320px;
+  max-width: 500px;
   height: 100%;
+  margin: 0 auto;
 }
+#nav-check {
+  display: none;
+}
+// nav icon
+#nav-icon {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  //margin: 3px auto;
+  float: right;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 20;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  background: $bar;
+  border-radius: 7px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+/* Icon */
+
+#nav-icon span:nth-child(1) {
+  top: 0;
+}
+
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 24px;
+}
+
+//#nav-icon.open span:nth-child(1) {
+#nav-check:checked + label span:nth-child(1) {
+  top: 12px;
+  width: 0;
+  left: 50%;
+}
+
+//#nav-icon.open span:nth-child(2) {
+#nav-check:checked + label span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+//#nav-icon.open span:nth-child(3) {
+#nav-check:checked + label span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+//#nav-icon.open span:nth-child(4) {
+#nav-check:checked + label span:nth-child(4) {
+  top: 12px;
+  width: 0;
+  left: 50%;
+}
+// nav icon end
 
 .hdr2 {
   height: 30px;
@@ -92,7 +159,7 @@ section {
   p {
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
-    max-width: 400px;
+    //max-width: 400px;
   }
 }
 
@@ -129,17 +196,19 @@ section {
 }
 
 footer {
-//  lost-center: 400px;
-
 
   div {
-//      lost-column: 1/1 0;
       margin-top: 10px;
       border-top: 3px solid $green;
     }
 
-  form p {
-    padding: 5px;
+  form {
+    width: 160px;
+    margin: 0 auto;
+
+    p {
+      padding: 5px;
+    }
   }
 
   button {
@@ -150,65 +219,51 @@ footer {
 
 }
 
-
-#menu, #menu ~ .menu {
+//#nav-icon ~ .menu {
+#nav-check ~ .menu {
   display: none;
 }
 
-#menu:checked ~ .menu {
+//#nav-icon.open ~ .menu {
+#nav-check:checked ~ .menu {
   display: block;
   position: absolute;
-  width: 90%;
+  width: 400px;
   height: 300px;
   top: 5px;
   left: 5px;
   background: $bground;
   z-index: 5;
 
-  div a {
-//    lost-columns: 1/3 0;
-//    lost-offset: 1/3;
+  a {
     display: block;
-    width: 40%;
+    width: 200px;
     height: 40px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     color: $textc;
     background: $green;
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: 100px;
     padding-top: 10px;
-  }
-}
-
-.hamberger {
-  float: right;
-  width: 20px;
-  padding: 5px;
-  z-index: 10;
-
-  .hamberger-bar {
-    display: block;
-    margin: 2px;
-    width: 20px;
-    height: 4px;
-    background: $bar;
   }
 }
 
 @media (min-width: 768px) {
   .page {
-    max-width: 768px;
+    max-width: 800px;
     height: 100%;
+
   }
 
     header {
-//    lost-column: 1/1 0;
+      width: 100%;
       height: 30px;
       background: $green;
 
       div {
-  //      lost-column: 1/1 1;
+        width: 100%;
         padding-top: 50px;
       }
 
@@ -226,8 +281,10 @@ footer {
       }
     }
 
-  #menu:checked ~ .menu,
-  #menu ~ .menu {
+  //#nav-icon.open ~ .menu,
+  //#nav-icon ~ .menu {
+  #nav-check:checked ~ .menu,
+  #nav-check ~ .menu {
     display: inline-block;
     position: absolute;
     top: -102px;
@@ -236,12 +293,8 @@ footer {
     height: 30px;
     z-index: 10;
 
-    div {
-//      lost-column: 1/5 0;
-    }
-
-    div a {
-      display: block;
+    a {
+      display: inline-block;
       width: 100px;
       height: 29px;
       text-align: center;
@@ -255,7 +308,7 @@ footer {
     }
   }
 
-  .hamberger {
+  #nav-icon {
     display: none;
   }
 
@@ -275,14 +328,14 @@ footer {
 //      lost-center: 700px;
     }
     p {
-      max-width: 700px;
+      //max-width: 700px;
       font-size: 120%;
       line-height: 130%;
     }
   }
 
   p {
-    max-width: 700px;
+    //max-width: 700px;
     font-size: 120%;
     line-height: 130%;
   }
@@ -305,13 +358,13 @@ footer {
 //      lost-center: 900px;
     }
     p {
-      max-width: 900px;
+      //max-width: 900px;
       font-size: 130%;
       line-height: 150%;
     }
   }
   p {
-    max-width: 900px;
+    //max-width: 900px;
     font-size: 130%;
     line-height: 150%;
   }

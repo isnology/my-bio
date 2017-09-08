@@ -3,7 +3,7 @@ var gulp = require("gulp"),
     gutil = require("gulp-util"),
     sass = require("gulp-sass"),
     //cssnano = require("gulp-cssnano"),
-    autoprefixer = require("gulp-autoprefixer"),
+    //autoprefixer = require("gulp-autoprefixer"),
     //sourcemaps = require("gulp-sourcemaps"),
     //stylish = require("jshint-stylish"),
     //uglify = require("gulp-uglify"),
@@ -12,6 +12,15 @@ var gulp = require("gulp"),
     plumber = require("gulp-plumber");
     //babel = require("gulp-babel"),
 //    browserSync = require("browser-sync").create();
+
+var postcss = require('gulp-postcss');
+
+var processorArray = [
+  //require('postcss-plugin')(),
+  require('postcss-cssnext')({ browsers: ['last 3 versions', 'ie 6-8', 'Firefox > 20']  }),
+  require('postcss-image-set-polyfill')(),
+];
+
 // Compile Sass, Autoprefix and minify
 gulp.task("styles", function() {
   return gulp.src("./assets/scss/**/*.scss")
@@ -23,12 +32,13 @@ gulp.task("styles", function() {
       )
       //.pipe(sourcemaps.init()) // Start Sourcemaps
       .pipe(sass())
-      .pipe(
-          autoprefixer({
-            browsers: ["last 2 versions"],
-            cascade: false
-          })
-      )
+      //.pipe(
+      //    autoprefixer({
+      //      browsers: ["last 2 versions", 'ie 6-8', 'Firefox > 20'],
+      //      cascade: false
+      //    })
+      //)
+      .pipe(postcss(processorArray))
       .pipe(gulp.dest("assets/css/"))
       //.pipe(rename({ suffix: ".min" }))
       //.pipe(cssnano())
