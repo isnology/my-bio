@@ -228,11 +228,7 @@ footer:nth-child(0n) {
   float: right;
 }
 
-#menu {
-  display: none;
-}
-
-#menu ~ .menu {
+#menu, #menu ~ .menu {
   display: none;
 }
 
@@ -240,7 +236,7 @@ footer:nth-child(0n) {
   display: block;
   position: absolute;
   width: 90%;
-  height: 200px;
+  height: 300px;
   top: 5px;
   left: 5px;
   background: #C7AF8E;
@@ -282,25 +278,17 @@ footer:nth-child(0n) {
     width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
     height: 30px;
     background: #89937C
-    
-    
   }
   .header:nth-child(1n) {
     float: left;
     margin-right: 30px;
     clear: none
-    
-    
   }
   .header:last-child {
     margin-right: 0
-    
-    
   }
   .header:nth-child(0n) {
     float: right
-    
-    
   }
   .header div {
     width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
@@ -331,9 +319,47 @@ footer:nth-child(0n) {
     float: right;
     margin-right: 8%;
   }
-
-  #menu:checked ~ .menu {
-    display: none;
+ 
+  #menu ~ .menu {
+    display: inline-block;
+    position: absolute;
+    top: -102px;
+    left: 0;
+    width: 90%;
+    height: 30px;
+    z-index: 10
+  }
+ 
+  #menu ~ .menu div {
+    width: calc(99.9% * 1/5 - (30px - 30px * 1/5));
+  }
+ 
+  #menu ~ .menu div:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+  }
+ 
+  #menu ~ .menu div:last-child {
+    margin-right: 0;
+  }
+ 
+  #menu ~ .menu div:nth-child(0n) {
+    float: right;
+  }
+ 
+  #menu ~ .menu div a {
+    display: block;
+    width: 100px;
+    height: 29px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #F2F2F2;
+    background: #89937C;
+    padding-top: 3px;
+    margin: 0;
+    z-index: 15;
   }
   
   .hamberger {

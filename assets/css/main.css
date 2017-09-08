@@ -132,11 +132,7 @@ footer {
   lost-column: 1/1 0;
 }
 
-#menu {
-  display: none;
-}
-
-#menu ~ .menu {
+#menu, #menu ~ .menu {
   display: none;
 }
 
@@ -144,7 +140,7 @@ footer {
   display: block;
   position: absolute;
   width: 90%;
-  height: 200px;
+  height: 300px;
   top: 5px;
   left: 5px;
   background: var(--bground);
@@ -204,12 +200,34 @@ footer {
       float: right;
       margin-right: 8%;
     }
-    
-    
   }
+ 
+  #menu ~ .menu {
+    display: inline-block;
+    position: absolute;
+    top: -102px;
+    left: 0;
+    width: 90%;
+    height: 30px;
+    z-index: 10;
+    
+    & div {
+      lost-column: 1/5 0;
+    }
 
-  #menu:checked ~ .menu {
-    display: none;
+    & div a {
+      display: block;
+      width: 100px;
+      height: 29px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      color: var(--textc);
+      background: var(--green);
+      padding-top: 3px;
+      margin: 0;
+      z-index: 15;
+    }
   }
   
   .hamberger {
