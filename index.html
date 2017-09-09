@@ -30,7 +30,7 @@
         </div>
       </nav>
       <div class="frame">
-        <img class="pic" src="assets/images/water.jpeg" alt="waves on the sand">
+        <img class="pic" src="assets/images/web.jpg" alt="spider web">
       </div>
       <div class="heading">
         <h1>Glenn</h1>
@@ -86,7 +86,8 @@
     </section>
 
     <footer id="footer">
-      <form name="netlify" action="/">
+      <!--<form action="https://fwdform.herokuapp.com/user/b09bee6e-11c9-4be6-9750-4345a60748a4" method="post">-->
+      <form action="https://formspree.io/grmarks@gmail.com" method="POST">
         <p>
           Contact Me
         </p>
@@ -94,13 +95,15 @@
           <input type="text" name="name" placeholder="Your Name">
         </p>
         <p>
-          <input type="email" name="email" placeholder="Your Email">
+          <input type="email" name="_replyto" placeholder="Your Email">
         </p>
         <p>
-          <textarea name="message" placeholder="Message"></textarea>
+          <textarea name="message" placeholder="Message" cols="40" rows="5"></textarea>
         </p>
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_subject" value="Message via http://domain.com">
         <p>
-          <button type="submit">Send</button>
+          <input type="submit" value="Send Message">
         </p>
       </form>
     </footer>
