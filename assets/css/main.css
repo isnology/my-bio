@@ -82,7 +82,7 @@ body {
   display: block;
   position: absolute;
   width: 100%;
-  height: 2900px;
+  height: 2700px;
   top: -2000px;
   background: #89937C; }
   .menu a:first-child {
@@ -93,7 +93,7 @@ body {
     height: auto;
     text-align: left;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     color: #F2F2F2;
     padding-top: 5px;
     margin-left: 10%;
@@ -186,8 +186,7 @@ footer {
     margin: 0 auto; }
     footer form h2 {
       width: 100%;
-      text-align: center;
-      font-size: 28px; }
+      text-align: center; }
     footer form p {
       padding: 5px; }
   footer input[type="submit"] {
@@ -196,7 +195,7 @@ footer {
     height: 1.3em;
     margin: 0 auto;
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 30px;
     color: #5D4B52; }
 
 @media (min-width: 768px) {
