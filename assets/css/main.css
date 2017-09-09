@@ -193,7 +193,8 @@ footer {
     margin: 0 auto;
     margin-bottom: 30px;
     font-size: 30pt;
-    color: #5D4B52; }
+    color: #5D4B52;
+    paddng-bottom: 5px; }
 
 @media (min-width: 768px) {
   .page {
