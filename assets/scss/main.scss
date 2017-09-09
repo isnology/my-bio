@@ -68,24 +68,20 @@ body {
   top: 24px;
 }
 
-//#nav-icon.open span:nth-child(1) {
 #nav-check:checked + label span:nth-child(1) {
   top: 12px;
   width: 0;
   left: 50%;
 }
 
-//#nav-icon.open span:nth-child(2) {
 #nav-check:checked + label span:nth-child(2) {
   transform: rotate(45deg);
 }
 
-//#nav-icon.open span:nth-child(3) {
 #nav-check:checked + label span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
-//#nav-icon.open span:nth-child(4) {
 #nav-check:checked + label span:nth-child(4) {
   top: 12px;
   width: 0;
@@ -95,14 +91,13 @@ body {
 // nav icon end
 
 .menu {
-  font-family: 'Tauri', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   display: block;
   position: absolute;
   width: 100%;
   height: calc(100vh + 2000px);
   top: -2000px;
   background: $green;
-  //z-index: 5;
 
   a:first-child {
     margin-top: 2040px;
@@ -110,24 +105,24 @@ body {
 
   a {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    font-size: 40pt;
+    font-size: 30pt;
     color: $textc;
-    margin-top: 5px;
-    padding-top: 10px;
+    padding-top: 5px;
+    margin-left: 10%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $bground;
   }
 }
 
-//#nav-icon ~ .menu {
 #nav-check ~ .menu {
   transform: rotate(-90deg);
-  transition: .25s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
-//#nav-icon.open ~ .menu {
 #nav-check:checked ~ .menu {
   transform: rotate(0deg);
 }
@@ -269,8 +264,6 @@ footer {
     display: none;
   }
 
-  //#nav-icon.open ~ .menu,
-  //#nav-icon ~ .menu {
   #nav-check:checked ~ .menu,
   #nav-check ~ .menu {
     display: block;
@@ -282,18 +275,22 @@ footer {
 
     a {
       display: inline-block;
-      width: 120px;
+      width: 90px;
       height: 30px;
       text-align: center;
       text-decoration: none;
-      font-size: 20pt;
+      font-size: 12pt;
       color: $textc;
       background: $green;
-      padding-top: 5px;
+      padding-top: 7px;
       margin: 0;
     }
     transform: rotate(0deg);
     transition: 0s;
+  }
+
+  input[type="submit"] {
+    font-size: 15pt;
   }
 }
 
