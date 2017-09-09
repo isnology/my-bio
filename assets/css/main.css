@@ -142,9 +142,10 @@ header {
     color: #89937C;
     font-weight: bold; }
 
-[id^="page"] {
+.page {
   max-width: 500px;
-  height: auto; }
+  height: auto;
+  margin: 0 auto; }
 
 section {
   width: 100%;
@@ -164,34 +165,38 @@ h2 {
   border-bottom: 3px solid #89937C;
   color: #5D4B52; }
 
-#page2 img {
-  width: 50%;
-  height: auto;
-  padding: 5px;
-  float: right; }
+#page2 {
+  background: #D3BDB0; }
+  #page2 img {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    float: right; }
 
 footer {
   width: 90%;
   margin: 0 auto;
-  margin-top: 10px;
-  border-top: 3px solid #89937C; }
+  margin-top: 10px; }
   footer form {
-    width: 170pt;
+    width: 14em;
     margin: 0 auto; }
     footer form h2 {
       width: 100%;
       text-align: center;
-      font-size: 20pt;
-      border-bottom: 0; }
+      font-size: 20pt; }
     footer form p {
       padding: 5px; }
   footer input[type="submit"] {
+    display: block;
+    width: 100px;
+    height: 3em;
+    margin: 0 auto;
     margin-bottom: 30px;
     font-size: 30pt;
     color: #5D4B52; }
 
 @media (min-width: 768px) {
-  [id^="page"] {
+  .page {
     max-width: 800px; }
   section p {
     font-size: 120%;
@@ -239,7 +244,7 @@ footer {
     font-size: 15pt; } }
 
 @media (min-width: 1024px) {
-  [id^="page"] {
+  .page {
     max-width: 1024px; }
   section p {
     font-size: 130%;
