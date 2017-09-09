@@ -1,22 +1,17 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background: #C7AF8E; }
 
 .pic {
   width: 100%;
-  height: 700px;
+  height: 100vh;
   position: absolute;
   top: 0;
-  /*left: -50%;*/
-  z-index: -1; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-.page {
-  max-width: 500px;
-  height: 100%;
-  margin: 0 auto; }
+  left: 0;
+  z-index: -2; }
 
 #nav-check {
   display: none; }
@@ -25,6 +20,7 @@ body {
   width: 40px;
   height: 30px;
   position: relative;
+  margin-top: 3px;
   float: right;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
@@ -47,7 +43,7 @@ body {
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out; }
 
-/* Icon */
+/* Icon part */
 #nav-icon span:nth-child(1) {
   top: 0; }
 
@@ -75,171 +71,151 @@ body {
   width: 0;
   left: 50%; }
 
-.hdr2 {
-  height: 30px;
+.menu {
+  font-family: 'Tauri', sans-serif;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 2000px);
+  top: -2000px;
   background: #89937C; }
+  .menu a:first-child {
+    margin-top: 2000px; }
+  .menu a {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: #F2F2F2;
+    margin-top: 5px;
+    padding-top: 10px; }
+
+#nav-check ~ .menu {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#nav-check:checked ~ .menu {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg); }
 
 header {
+  width: 100%;
+  height: 100vh;
   font-family: 'Advent Pro', sans-serif;
   font-weight: bold;
   text-align: center;
   color: #5D4B52; }
-  header .medium {
+  header .nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: #89937C;
+    z-index: -1; }
+  header .heading h1:nth-child(1) {
+    padding-top: 80px; }
+  header .heading h1:nth-child(2) {
+    padding-top: 30px; }
+  header .heading h1:nth-child(3) {
     display: none; }
   header h1 {
     font-size: 60pt;
-    padding: 10px;
     font-weight: bold; }
   header h3 {
     font-size: 29pt;
-    padding: 10px;
+    padding: 50px;
     color: #89937C;
     font-weight: bold; }
-  header .back {
-    float: right;
-    padding-right: 10px;
-    text-decoration: none;
-    color: #5D4B52; }
+
+[id^="page"] {
+  max-width: 500px;
+  height: auto; }
 
 section {
-  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
   color: #F2F2F2;
   background: #C7AF8E;
-  z-index: 2; }
+  z-index: -1; }
   section h1 {
     font-family: 'Tauri', sans-serif;
     font-size: 22pt;
-    padding-left: 5px;
-    padding-top: 5px;
-    margin-bottom: 8px;
+    padding: 5px 5px 5px 7px;
     border-bottom: 3px solid #89937C;
-    width: 6em;
     color: #5D4B52; }
   section p {
     font-family: 'Montserrat', sans-serif;
     padding: 5px; }
 
-.main2 img {
-  width: 200px;
+#page2 img {
+  width: 50%;
   height: auto;
-  padding: 5px; }
+  padding: 5px;
+  float: right; }
 
-.main2 h1 {
-  font-family: 'Tauri', sans-serif;
-  font-size: 30px;
-  padding-left: 5px;
-  padding-top: 5px;
-  margin-bottom: 8px;
-  border-bottom: 3px solid #89937C;
-  width: 6em;
-  color: #5D4B52; }
-
-.main2 p {
-  padding: 5px; }
-
-footer div {
-  margin-top: 10px;
+footer {
+  width: 90%;
+  margin: 0 auto;
   border-top: 3px solid #89937C; }
-
-footer form {
-  width: 160px;
-  margin: 0 auto; }
-  footer form p {
-    padding: 5px; }
-
-footer button {
-  display: block;
-  width: 5em;
-  height: 2em; }
-
-#nav-check ~ .menu {
-  display: none; }
-
-#nav-check:checked ~ .menu {
-  display: block;
-  position: absolute;
-  width: 400px;
-  height: 300px;
-  top: 5px;
-  left: 5px;
-  background: #C7AF8E;
-  z-index: 5; }
-  #nav-check:checked ~ .menu a {
+  footer form {
+    width: 160px;
+    margin: 0 auto; }
+    footer form p {
+      padding: 5px; }
+  footer button {
     display: block;
-    width: 200px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    color: #F2F2F2;
-    background: #89937C;
-    margin-top: 5px;
-    margin-left: 100px;
-    padding-top: 10px; }
+    width: 5em;
+    height: 2em; }
 
 @media (min-width: 768px) {
-  .page {
-    max-width: 800px;
-    height: 100%; }
-  header {
-    width: 100%;
-    height: 30px;
-    background: #89937C; }
-    header div {
-      width: 100%;
-      padding-top: 50px; }
-    header .small {
-      display: none; }
-    header .medium {
-      display: block; }
-    header h3 {
-      float: right;
-      margin-right: 8%; }
+  [id^="page"] {
+    max-width: 800px; }
+  section p {
+    font-size: 120%;
+    line-height: 130%; }
+  header .heading h1:nth-child(1), header .heading h1:nth-child(2) {
+    display: none; }
+  header .heading h1:nth-child(3) {
+    display: block;
+    padding-top: 120px; }
+  header h3 {
+    padding-top: 160px;
+    float: right;
+    margin-right: 8%; }
+  #nav-icon {
+    display: none; }
   #nav-check:checked ~ .menu,
   #nav-check ~ .menu {
-    display: inline-block;
+    display: block;
     position: absolute;
-    top: -102px;
+    top: 0;
     left: 0;
-    width: 90%;
-    height: 30px;
-    z-index: 10; }
+    width: 100%;
+    height: 40px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 0s;
+    transition: 0s; }
     #nav-check:checked ~ .menu a,
     #nav-check ~ .menu a {
       display: inline-block;
-      width: 100px;
-      height: 29px;
+      width: 120px;
+      height: 30px;
       text-align: center;
       text-decoration: none;
       font-size: 20px;
       color: #F2F2F2;
       background: #89937C;
-      padding-top: 3px;
-      margin: 0;
-      z-index: 15; }
-  #nav-icon {
-    display: none; }
-  .pic {
-    width: 100%;
-    height: 650px; }
-  section {
-    margin-top: 350px; }
-    section h1 {
-      margin-bottom: 12px; }
-    section p {
-      font-size: 120%;
-      line-height: 130%; }
-  p {
-    font-size: 120%;
-    line-height: 130%; } }
+      padding-top: 5px;
+      margin: 0; } }
 
 @media (min-width: 1024px) {
-  .page {
-    max-width: 1024px;
-    height: 100%; }
+  [id^="page"] {
+    max-width: 1024px; }
   section p {
-    font-size: 130%;
-    line-height: 150%; }
-  p {
     font-size: 130%;
     line-height: 150%; } }

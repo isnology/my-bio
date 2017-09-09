@@ -9,11 +9,10 @@
     <title>My Bio</title>
   </head>
   <body>
-    <div class="frame">
-      <img class="pic" src="assets/images/water.jpeg" alt="waves on the sand">
-    </div>
-    <nav>
-      <div class="page">
+
+    <header>
+      <div class="nav-bar"></div>
+      <nav>
         <input id="nav-check" type="checkbox">
         <label id="nav-icon" for="nav-check">
           <span></span>
@@ -21,70 +20,90 @@
           <span></span>
           <span></span>
         </label>
-        <div class="menu"">
-          <a href="passion.html">My Passion</a>
+        <div class="menu">
+          <a href="#page1">About Me</a>
+          <a href="#page2">My Passion</a>
           <a href="resume.html">Resume</a>
           <a href="https://www.linkedin.com/in/glenn-marks-a5574b3/">Linked In</a>
           <a href="https://github.com/isnology/my-bio">GitHub</a>
           <a href="#footer">Contact</a>
         </div>
+      </nav>
+      <div class="frame">
+        <img class="pic" src="assets/images/water.jpeg" alt="waves on the sand">
       </div>
-    </nav>
-    <header>
-      <div class="page">
-        <div class="small"><h1>Glenn</h1></div>
-        <div class="small"><h1>Marks</h1></div>
-        <div class="medium"><h1>Glenn Marks</h1></div>
-        <div><h3>Web Developer</h3></div>
+      <div class="heading">
+        <h1>Glenn</h1>
+        <h1>Marks</h1>
+        <h1>Glenn Marks</h1>
       </div>
+      <div><h3>Web Developer</h3></div>
     </header>
-    <section>
-      <div class="page">
-        <h1>About Me</h1>
+
+    <section id="page1">
+      <h1>About Me</h1>
+      <p>
+        Hi, my name is Glenn, I am a guy who likes to build things, both in the physical world and the digital world.
+        I have a welder and lathe for old school metal work and a 3D printer for 21st century creativity.
+        I am passionate about clean energy and man made global warming. I own an electric motorbike and look forward
+        to the day that all transport is electric, and all energy is clean.
+      </p>
+      <p>
+        I follow the Brisbane Lions (formerly Fitzroy) footy team as a family tradition, and have 2 kids, son 10 and
+        daughter 8 years old, both of whom have no interest in footy.
+      </p>
+      <p>
+        I have been a programmer on an IBM AS/400 and now I am a full stack web developer thanks to bootcamp at Coder
+        Academy. The web has a bright future and I want to be a part of it.
+      </p>
+      <p>
+        I find developing very rewarding and the web is full of possibilities, a place to bring ideas to life with
+        minimal boundaries.
+      </p>
+      <p>
+        My goal is to be a full stack developer so that I have all the skills needed to build a website. Starting
+        with a blank page (as start ups do) and designing the application I find appealing.
+      </p>
+    </section>
+
+    <section id="page2">
+      <h1>My thoughts on Electric Vs Petrol</h1>
+      <div class="passion">
+        <img src="assets/images/My-zero.jpg" alt="Electric motorbike">
         <p>
-          Hi, my name is Glenn, I am a guy who likes to build things, both in the physical world and the digital world.
-          I have a welder and lathe for old school metal work and a 3D printer for 21st century creativity.
-          I am passionate about clean energy and man made global warming. I own an electric motorbike and look forward
-          to the day that all transport is electric, and all energy is clean.
+          I am passionate about electric vehicles and man made global warming. I own a Zero SR electric motorbike because
+          it is electric but also as a means of doing something rather than just saying something. It’s great to believe
+          that we need clean energy and to do something to cut emissions but it’s way better to DO something about it.
         </p>
+      </div>
+      <div>
         <p>
-          I follow the Brisbane Lions (formerly Fitzroy) footy team as a family tradition, and have 2 kids, son 10 and
-          daughter 8 years old, both of whom have no interest in footy.
-        </p>
-        <p>
-          I have been a programmer on an IBM AS/400 and now I am a full stack web developer thanks to bootcamp at Coder
-          Academy. The web has a bright future and I want to be a part of it.
-        </p>
-        <p>
-          I find developing very rewarding and the web is full of possibilities, a place to bring ideas to life with
-          minimal boundaries.
-        </p>
-        <p>
-          My goal is to be a full stack developer so that I have all the skills needed to build a website. Starting
-          with a blank page (as start ups do) and designing the application I find appealing.
+          Electric vehicles are so much fun to drive/ride even though they don’t make a cool noise, the instant torque is
+          intoxicating and hard to explain to a “petrol head”. You need to experience it, to understand, and once you do
+          you will be a convert.
         </p>
       </div>
     </section>
+
     <footer id="footer">
-      <div class="page">
-        <form name="contact" action="thank-you" netlify>
-          <p>
-            Contact Me
-          </p>
-          <p>
-            <input type="text" name="name" placeholder="Your Name">
-          </p>
-          <p>
-            <input type="email" name="email" placeholder="Your Email">
-          </p>
-          <p>
-            <textarea name="message" placeholder="Message"></textarea>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </div>
+      <form name="netlify" action="/">
+        <p>
+          Contact Me
+        </p>
+        <p>
+          <input type="text" name="name" placeholder="Your Name">
+        </p>
+        <p>
+          <input type="email" name="email" placeholder="Your Email">
+        </p>
+        <p>
+          <textarea name="message" placeholder="Message"></textarea>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </footer>
+
   </body>
 </html>
