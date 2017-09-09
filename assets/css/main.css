@@ -189,12 +189,11 @@ footer {
   footer input[type="submit"] {
     display: block;
     width: 150px;
-    height: 1em;
+    height: 1.2em;
     margin: 0 auto;
     margin-bottom: 30px;
     font-size: 30pt;
-    color: #5D4B52;
-    paddng-bottom: 5px; }
+    color: #5D4B52; }
 
 @media (min-width: 768px) {
   .page {
