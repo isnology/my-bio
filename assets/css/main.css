@@ -93,7 +93,7 @@ body {
     height: auto;
     text-align: center;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 40pt;
     color: #F2F2F2;
     margin-top: 5px;
     padding-top: 10px; }
@@ -173,13 +173,13 @@ footer {
   margin-top: 10px;
   border-top: 3px solid #89937C; }
   footer form {
-    width: 270px;
+    width: 230px;
     margin: 0 auto; }
     footer form p {
       padding: 5px; }
   footer input[type="submit"] {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 30pt;
     color: #5D4B52; }
 
 @media (min-width: 768px) {
@@ -220,7 +220,7 @@ footer {
       height: 30px;
       text-align: center;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 20pt;
       color: #F2F2F2;
       background: #89937C;
       padding-top: 5px;
