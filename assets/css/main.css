@@ -145,13 +145,28 @@ header {
     font-weight: bold; }
 
 .content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   max-width: 500px;
   min-width: 320px;
   height: auto;
-  margin: 0 auto;
   padding: 5px; }
 
 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   width: 100%;
   height: auto;
   color: #F2F2F2;
@@ -179,48 +194,73 @@ h2 {
   .sect2 h2 {
     width: 100%;
     text-align: center; }
-  .sect2 .content .col {
-    display: inline-block;
-    width: 160px;
-    height: auto;
-    margin: 0 auto; }
-  .sect2 img {
-    width: 140px;
-    height: 140px; }
-  .sect2 .html5 {
-    width: 140px;
-    margin-left: -5px;
-    padding-right: 12px; }
-  .sect2 .css3 {
-    width: 100px;
-    padding-left: 25px;
-    padding-right: 15px; }
-  .sect2 .js {
-    width: 147px;
-    height: 146px;
-    padding-left: 20px;
-    padding-right: 15px; }
-  .sect2 .ruby {
-    width: 120px;
-    height: 128px;
-    padding: 10px 15px 10px 15px; }
-  .sect2 .rails {
-    width: 110px;
-    height: 128px;
-    padding: 10px 15px 10px 25px; }
-  .sect2 .node {
-    width: 150px;
-    padding-left: 15px; }
-  .sect2 figure {
-    text-align: center; }
+  .sect2 .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .sect2 .content .item {
+      width: 160px;
+      height: 160px; }
+    .sect2 .content figure {
+      text-align: center; }
+    .sect2 .content img {
+      width: 130px;
+      height: 130px; }
+    .sect2 .content .html5 img {
+      padding-top: 5px; }
+    .sect2 .content .css3 img {
+      width: 95px;
+      padding-top: 5px; }
+    .sect2 .content .js img {
+      width: 147px;
+      height: 140px; }
+    .sect2 .content .ruby img {
+      width: 120px;
+      height: 128px;
+      padding-top: 8px; }
+    .sect2 .content .rails img {
+      width: 110px;
+      height: 128px;
+      padding-top: 7px; }
+    .sect2 .content .rspec img {
+      padding-top: 5px; }
+    .sect2 .content .node img {
+      width: 150px;
+      padding-top: 8px; }
 
 .sect3 {
-  background: #C7AF8E;
+  background: #89937C;
   color: #F2F2F2; }
 
-footer {
+iframe[seamless] {
+  border: none; }
+
+iframe {
   width: 100%;
-  margin-top: 10px;
+  height: 5000pt; }
+
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+  padding-top: 10px;
   background: #D3BDB0; }
   footer form {
     width: 175pt;
@@ -240,23 +280,20 @@ footer {
     color: #5D4B52; }
 
 @media (min-width: 768px) {
-  section {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex; }
   .content {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-       -moz-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     max-width: 600px; }
   .sect2 {
     display: block; }
     .sect2 .content {
-      max-width: 100%; }
+      max-width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
   header .heading h1:nth-child(1), header .heading h1:nth-child(2) {
     display: none; }
   header .heading h1:nth-child(3) {
