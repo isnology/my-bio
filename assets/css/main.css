@@ -276,13 +276,13 @@ footer {
     footer form input {
       padding: 2px;
       margin: 5px; }
-    footer form p {
-      padding: 5px; }
+    footer form textarea {
+      padding: 2px;
+      margin: 5px; }
   footer input[type="submit"] {
     display: block;
     width: 150px;
     height: 1.3em;
-    margin: 0 auto;
     margin-bottom: 30px;
     font-size: 30px;
     color: #5D4B52; }
@@ -340,6 +340,4 @@ footer {
       padding-top: 8px;
       margin: 0;
       padding-bottom: 0;
-      border-bottom: 0; }
-  .sect3 .content {
-    width: 800px; } }
+      border-bottom: 0; } }

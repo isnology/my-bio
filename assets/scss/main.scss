@@ -286,7 +286,6 @@ h2 {
 
 footer {
   display: flex;
-  //flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   padding-top: 10px;
@@ -308,8 +307,10 @@ footer {
       padding: 2px;
       margin: 5px;
     }
-    p {
-      padding: 5px;
+
+    textarea {
+      padding: 2px;
+      margin: 5px;
     }
   }
 
@@ -317,7 +318,6 @@ footer {
     display: block;
     width: 150px;
     height: 1.3em;
-    margin: 0 auto;
     margin-bottom: 30px;
     font-size: 30px;
     color: $dark;
@@ -386,14 +386,6 @@ footer {
     }
     transform: rotate(0deg);
     transition: 0s;
-  }
-
-  .sect3 {
-    .content {
-      width: 800px;
-      //display: flex;
-      //justify-content: space-around;
-    }
   }
 }
 
