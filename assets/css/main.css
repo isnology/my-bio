@@ -279,7 +279,7 @@ footer {
     footer form textarea {
       padding: 2px;
       margin: 5px; }
-  footer input[type="submit"] {
+  footer button {
     display: block;
     width: 150px;
     height: 1.3em;
