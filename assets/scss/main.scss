@@ -282,20 +282,6 @@ h2 {
 .sect3 {
   background: $green;
   color: $white;
-
-  .content {
-    width: 700px;
-    height: auto;
-
-    iframe[seamless] {
-      border: none;
-    }
-
-    iframe {
-      width: 100%;
-      height: calc(4300px / vw);
-    }
-  }
 }
 
 footer {
@@ -307,7 +293,7 @@ footer {
   background: $lightest;
 
   form {
-    width: calc(35 * 5pt);
+    width: calc(35 * .4em);
     margin: 0 auto;
 
     h2 {
