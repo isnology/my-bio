@@ -17,7 +17,7 @@ var postcss = require('gulp-postcss');
 
 var processorArray = [
   //require('postcss-plugin')(),
-  require('postcss-cssnext')({ browsers: ['last 3 versions', 'ie 6-8', 'Firefox > 20']  }),
+  require('postcss-cssnext')({ browsers: ['last 6 versions', 'ie 6-8', 'Firefox > 20']  }),
   require('postcss-image-set-polyfill')(),
 ];
 

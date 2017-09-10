@@ -22,18 +22,16 @@
           <span></span>
         </label>
         <div class="menu">
-          <a href="#page1">About Me</a>
-          <a href="#page2">My Passion</a>
-          <a href="#page3">Skills</a>
+          <a href="#cont1">About Me</a>
+          <a href="#cont2">My Passion</a>
+          <a href="#cont3">Tech Stacks</a>
           <a href="resume.html">Resume</a>
           <a href="https://www.linkedin.com/in/glenn-marks-a5574b3/">Linked In</a>
           <a href="https://github.com/isnology/my-bio">GitHub</a>
-          <a href="#footer">Contact</a>
+          <a href="#footer1">Contact</a>
         </div>
       </nav>
-      <div class="frame">
-        <img class="pic" src="assets/images/water.jpeg" alt="wave on the sand">
-      </div>
+      <img class="pic" src="assets/images/water.jpeg" alt="wave on the sand">
       <div class="heading">
         <h1>Glenn</h1>
         <h1>Marks</h1>
@@ -42,8 +40,8 @@
       <div><h3>Web Developer</h3></div>
     </header>
 
-    <section id="page1" class="colour1">
-      <div class="page">
+    <section class="sect1">
+      <div class="content" id="cont1">
         <h2>About Me</h2>
         <p>
           Hi, my name is Glenn, I am a guy who likes to build things, both in the physical world and the digital world.
@@ -68,10 +66,8 @@
           with a blank page (as start ups do) and designing the application I find appealing.
         </p>
       </div>
-    </section>
 
-    <section id="page2" class="colour2">
-      <div class="page">
+      <div class="content" id="cont2">
         <h2>My thoughts on Electric Vs Petrol</h2>
         <div class="passion">
           <img src="assets/images/My-zero.jpg" alt="Electric motorbike">
@@ -91,35 +87,47 @@
       </div>
     </section>
 
-    <section id="page3">
-      <div class="page">
-        <h2>Skills</h2>
-        <p>
-          text
-        </p>
+    <section class="sect2">
+      <h2>Technology Stacks</h2>
+      <figure class="content" id="cont3">
+        <img class="html5" src="assets/images/html5.png" alt="html 5">
+        <img class="css3" src="assets/images/css3.png" alt="css 5">
+        <img class="js" src="assets/images/js.png" alt="javascript">
+        <img class="ruby" src="assets/images/ruby.jpeg" alt="ruby">
+        <img class="rails" src="assets/images/rails.jpeg" alt="ruby on rails">
+        <img class="node" src="assets/images/node.png" alt="node js">
+        <img class="pg" src="assets/images/pg.png" alt="postgres q l">
+      </figure>
+    </section>
+
+    <section class="sect3">
+      <div class="content" id="cont5">
+
       </div>
     </section>
 
-    <footer id="footer">
-      <form action="https://formspree.io/grmarks@gmail.com" method="POST">
-        <h2>
-          Contact Me
-        </h2>
-        <p>
-          <input type="text" name="name" placeholder="Your Name">
-        </p>
-        <p>
-          <input type="email" name="_replyto" placeholder="Your Email">
-        </p>
-        <p>
-          <textarea name="message" placeholder="Message" cols="35" rows="5"></textarea>
-        </p>
-        <input type="text" name="_gotcha" style="display:none">
-        <input type="hidden" name="_subject" value="Message via http://domain.com">
-        <p>
-          <input type="submit" value="Send">
-        </p>
-      </form>
+    <footer>
+      <div class="content" id="footer1">
+        <form action="https://formspree.io/grmarks@gmail.com" method="POST">
+          <h2>
+            Contact Me
+          </h2>
+          <p>
+            <input type="text" name="name" placeholder="Your Name">
+          </p>
+          <p>
+            <input type="email" name="_replyto" placeholder="Your Email">
+          </p>
+          <p>
+            <textarea name="message" placeholder="Message" cols="35" rows="5"></textarea>
+          </p>
+          <input type="text" name="_gotcha" style="display:none">
+          <input type="hidden" name="_subject" value="Message via http://domain.com">
+          <p>
+            <input type="submit" value="Send">
+          </p>
+        </form>
+      </div>
     </footer>
 
   </body>
