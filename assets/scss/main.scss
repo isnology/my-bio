@@ -181,6 +181,30 @@ header {
   padding: 5px;
 }
 
+.content-flex {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .item {
+    width: 160px;
+    height: 160px;
+  }
+
+  .list {
+    width: 220px;
+  }
+}
+
+.content-block {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 section {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +238,7 @@ h2 {
 }
 
 .sect2 {
+  display: block;
   background: $purewhite;
   color: $green;
 
@@ -222,16 +247,7 @@ h2 {
     text-align: center;
   }
 
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    .item {
-      width: 160px;
-      height: 160px;
-    }
-
+  .content-flex {
     figure {
       text-align: center;
     }
@@ -280,8 +296,49 @@ h2 {
 }
 
 .sect3 {
+  display: block;
   background: $green;
   color: $white;
+
+  h2 {
+    width: 100%;
+  }
+
+
+
+  h3 {
+    color: $dark;
+  }
+
+  h4 {
+    width: 100%;
+    color: $dark;
+    text-align: right;
+  }
+}
+
+.sect4 {
+  display: block;
+  background: $light;
+  color: $white;
+
+  h2 {
+    width: 100%;
+  }
+
+  .content-flex > h2 {
+    text-align: center;
+  }
+
+  h3 {
+    color: $dark;
+  }
+
+  h4 {
+    width: 100%;
+    color: $dark;
+    text-align: right;
+  }
 }
 
 footer {
@@ -289,7 +346,7 @@ footer {
   justify-content: center;
   width: 100%;
   padding-top: 10px;
-  background: $lightest;
+  background: $bground;
 
   form {
     display: flex;
@@ -328,15 +385,6 @@ footer {
 
   .content {
     max-width: 600px;
-  }
-
-  .sect2 {
-    display: block;
-    .content {
-      max-width: 100%;
-      display: flex;
-      justify-content: space-around;
-    }
   }
 
   header {
@@ -387,6 +435,17 @@ footer {
     transform: rotate(0deg);
     transition: 0s;
   }
+
+  //.sect3 {
+  //  display: block;
+  //  .content {
+  //    max-width: 100%;
+  //    display: flex;
+  //    .lists {
+  //      width: 400px;
+  //    }
+  //  }
+  //}
 }
 
 @media (min-width: 1024px) {

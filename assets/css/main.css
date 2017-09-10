@@ -155,6 +155,32 @@ header {
   height: auto;
   padding: 5px; }
 
+.content-flex {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  .content-flex .item {
+    width: 160px;
+    height: 160px; }
+  .content-flex .list {
+    width: 220px; }
+
+.content-block {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto; }
+
 section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -189,56 +215,66 @@ h2 {
   float: right; }
 
 .sect2 {
+  display: block;
   background: #FFFFFF;
   color: #89937C; }
   .sect2 h2 {
     width: 100%;
     text-align: center; }
-  .sect2 .content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-    .sect2 .content .item {
-      width: 160px;
-      height: 160px; }
-    .sect2 .content figure {
-      text-align: center; }
-    .sect2 .content img {
-      width: 130px;
-      height: 130px; }
-    .sect2 .content .html5 img {
-      padding-top: 5px; }
-    .sect2 .content .css3 img {
-      width: 95px;
-      padding-top: 5px; }
-    .sect2 .content .js img {
-      width: 147px;
-      height: 140px; }
-    .sect2 .content .ruby img {
-      width: 120px;
-      height: 128px;
-      padding-top: 8px; }
-    .sect2 .content .rails img {
-      width: 110px;
-      height: 128px;
-      padding-top: 7px; }
-    .sect2 .content .rspec img {
-      padding-top: 5px; }
-    .sect2 .content .node img {
-      width: 150px;
-      padding-top: 8px; }
+  .sect2 .content-flex figure {
+    text-align: center; }
+  .sect2 .content-flex img {
+    width: 130px;
+    height: 130px; }
+  .sect2 .content-flex .html5 img {
+    padding-top: 5px; }
+  .sect2 .content-flex .css3 img {
+    width: 95px;
+    padding-top: 5px; }
+  .sect2 .content-flex .js img {
+    width: 147px;
+    height: 140px; }
+  .sect2 .content-flex .ruby img {
+    width: 120px;
+    height: 128px;
+    padding-top: 8px; }
+  .sect2 .content-flex .rails img {
+    width: 110px;
+    height: 128px;
+    padding-top: 7px; }
+  .sect2 .content-flex .rspec img {
+    padding-top: 5px; }
+  .sect2 .content-flex .node img {
+    width: 150px;
+    padding-top: 8px; }
 
 .sect3 {
+  display: block;
   background: #89937C;
   color: #F2F2F2; }
+  .sect3 h2 {
+    width: 100%; }
+  .sect3 h3 {
+    color: #5D4B52; }
+  .sect3 h4 {
+    width: 100%;
+    color: #5D4B52;
+    text-align: right; }
+
+.sect4 {
+  display: block;
+  background: #C1AE9F;
+  color: #F2F2F2; }
+  .sect4 h2 {
+    width: 100%; }
+  .sect4 .content-flex > h2 {
+    text-align: center; }
+  .sect4 h3 {
+    color: #5D4B52; }
+  .sect4 h4 {
+    width: 100%;
+    color: #5D4B52;
+    text-align: right; }
 
 footer {
   display: -webkit-box;
@@ -253,7 +289,7 @@ footer {
           justify-content: center;
   width: 100%;
   padding-top: 10px;
-  background: #D3BDB0; }
+  background: #C7AF8E; }
   footer form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -290,18 +326,6 @@ footer {
 @media (min-width: 768px) {
   .content {
     max-width: 600px; }
-  .sect2 {
-    display: block; }
-    .sect2 .content {
-      max-width: 100%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; }
   header .heading h1:nth-child(1), header .heading h1:nth-child(2) {
     display: none; }
   header .heading h1:nth-child(3) {

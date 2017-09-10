@@ -16,5 +16,18 @@ Installing Node.js to run Gulp to run postcss
 - [Gulp & Node install](http://www.hongkiat.com/blog/getting-started-with-gulp-js/)
 - [postcss install](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/)
 
+I changed gulp to run SASS and Autoprefixer via PostCSS's nextcss. I started using 'lost' for formatting but this 
+proved to have its own problems, so I switch back to SASS and used flex for layout. This allowed me to do what I needed.
+
+I had lots of problems with the "contact me" email system. I used FORMSPREE as it delivers the email into your mailbox.
+I found it only works from a server hosted web page and on the mobile after a lot of stuffing around to get the 
+format of the input fields consistem between the browser and the phone. It also turns out that if you save an icon to
+ your desktop to make the web page look like an app the email doesn't work, but it does if used within the browser.
+ 
+I also struggled with what content to put in the site and the design aspect of the site.
+
+ 
+
+
              
  
