@@ -278,7 +278,7 @@ footer {
       margin: 5px; }
     footer form p {
       padding: 5px; }
-  footer button {
+  footer input[type="submit"] {
     display: block;
     width: 150px;
     height: 1.3em;
