@@ -38,7 +38,7 @@ Other Resources
 My Site journey
 =
 
-- My audience will be prospective employer
+- My audience will be prospective employers
 - assumptions - if they use IE 8 then do I want to really work there?
 - I wanted a single page site
 

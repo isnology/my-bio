@@ -2,13 +2,13 @@
 var gulp = require("gulp"),
     gutil = require("gulp-util"),
     sass = require("gulp-sass"),
-    //cssnano = require("gulp-cssnano"),
+    cssnano = require("gulp-cssnano"),
     //autoprefixer = require("gulp-autoprefixer"),
-    //sourcemaps = require("gulp-sourcemaps"),
+    sourcemaps = require("gulp-sourcemaps"),
     //stylish = require("jshint-stylish"),
     //uglify = require("gulp-uglify"),
     //concat = require("gulp-concat"),
-    //rename = require("gulp-rename"),
+    rename = require("gulp-rename"),
     plumber = require("gulp-plumber");
     //babel = require("gulp-babel"),
 //    browserSync = require("browser-sync").create();
@@ -40,10 +40,10 @@ gulp.task("styles", function() {
       //)
       .pipe(postcss(processorArray))
       .pipe(gulp.dest("assets/css/"))
-      //.pipe(rename({ suffix: ".min" }))
-      //.pipe(cssnano())
-      //.pipe(sourcemaps.write(".")) // Creates sourcemaps for minified styles
-      //.pipe(gulp.dest("./assets/css/"));
+      .pipe(rename({ suffix: ".min" }))
+      .pipe(cssnano())
+      .pipe(sourcemaps.write(".")) // Creates sourcemaps for minified styles
+      .pipe(gulp.dest("./assets/css/"));
 });
 // Concat, and minify JavaScript
 //gulp.task("site-js", function() {
