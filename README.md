@@ -16,6 +16,9 @@ Installing Node.js to run Gulp to run postcss
 - [Gulp & Node install](http://www.hongkiat.com/blog/getting-started-with-gulp-js/)
 - [postcss install](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/)
 
+Some Challenges
+-
+
 I changed gulp to run SASS and Autoprefixer via PostCSS's nextcss. I started using 'lost' for formatting but this 
 proved to have its own problems, so I switch back to SASS and used flex for layout. This allowed me to do what I needed.
 
@@ -26,8 +29,18 @@ format of the input fields consistem between the browser and the phone. It also 
  
 I also struggled with what content to put in the site and the design aspect of the site.
 
- 
+Other Resources
+-
+- [sitemap](www.sitemap.org)
+- [favicon](https://realfavicongenerator.net) 
+- [netlify](https://app.netlify.com)
 
+My Site journey
+=
+
+- My audience will be prospective employer
+- assumptions - if they use IE 8 then do I want to really work there?
+- I wanted a single page site
 
              
  
