@@ -76,5 +76,12 @@ Things I would do Differently/Want to add
 - Extra navigation to return to top.
 - More content.
 
+What I learned
+=
+
+- don't use PostCSS 'lost'
+- flex works well if you keep it simple
+- Use Rails or Node for web sites.
+
              
  
