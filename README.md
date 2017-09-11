@@ -29,11 +29,13 @@ proved to have its own problems, so I switch back to SASS and used flex for layo
 My Site Journey
 =
 
+Design Goals
+-
+
 - My audience will be prospective employers
 - Backwards and cross browser compatibility 
 - Mobile first
 - I wanted a single page site
-- If I am targeting employers and they use IE 8 then do I want to really work there?
 
 
 I started with a mood board.
@@ -56,7 +58,7 @@ I did some test ideas in codepen before actually starting on the site.
 
 Build the site in HTML5 and CSS3 with a focus on using CSS3 and only using Javascript/jquery where CSS3 was incapable.
 
-Problems Encounted
+Problems
 =
 
 I changed gulp to run SASS and Autoprefixer via PostCSS's nextcss. I started using 'lost' for formatting but this 
@@ -69,7 +71,7 @@ format of the input fields consistem between the browser and the phone. It also 
  
 I also struggled with what content to put in the site and the design aspect of the site.
 
-Things I would do Differently/Want to add
+Things I would do Differently
 =
 
 - Number 1 would be to use Trello so I could track bugs without being distracted from the current problem.
