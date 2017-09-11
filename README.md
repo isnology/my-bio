@@ -22,7 +22,7 @@ proved to have its own problems, so I switch back to SASS and used flex for layo
 
 Other Resources
 -
-- [sitemap](www.sitemap.org)
+- [sitemap](http://www.sitemap.org)
 - [favicon](https://realfavicongenerator.net) 
 - [netlify](https://app.netlify.com)
 - [formspree](https://formspree.io/)
