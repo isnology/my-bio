@@ -35,6 +35,13 @@ My Site Journey
 - assumptions - if they use IE 8 then do I want to really work there?
 - I wanted a single page site
 
+Coolers
+![My colours](assets/images/coolers.png?raw=true "My colours")
+
+
+Figma
+![My design](assets/images/figma.png?raw=true "My design")
+
 I started with a Mood board, colours and Figma for design. 
 Once done I then set up the directory structure, git, 
 netlify, build tool (gulp etc) and domain name so I could concentrate on building the site. 
