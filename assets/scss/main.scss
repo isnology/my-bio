@@ -299,9 +299,12 @@ h2 {
   display: block;
   background: $green;
   color: $white;
+  paddding-top: 10px;
+  padding-bottom: 10px;
 
   h2 {
     width: 100%;
+    padding: 5px 0 5px 0;
   }
 
 
@@ -319,11 +322,16 @@ h2 {
 
 .sect4 {
   display: block;
-  background: $light;
+  background: $green;
   color: $white;
+  padding: 10px;
+  border-top: 3px solid $light;
+  border-bottom: 3px solid $light;
+
 
   h2 {
     width: 100%;
+    padding: 5px 0 5px 0;
   }
 
   .content-flex > h2 {
@@ -348,36 +356,51 @@ footer {
   padding-top: 10px;
   background: $bground;
 
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
   form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 320px;
     margin: 0 auto;
-
-    h2 {
-      width: 100%;
-      text-align: center;
-    }
+    border: 2px solid $green;
+    margin-bottom: 30px;
 
     input {
       padding: 2px;
       margin: 5px;
+      width: 95%;
+      border: none;
+      color: $darkest;
+      background: $bground;
     }
 
     textarea {
       padding: 2px;
       margin: 5px;
+      width: 95%;
+      border: none;
+      color: $darkest;
+      background: $bground;
+    }
+
+    div {
+      border: 2px solid $green;
+      width: 320px;
     }
   }
 
   button {
     display: block;
-    width: 150px;
+    width: 320px;
     height: 1.3em;
-    margin-bottom: 30px;
     font-size: 30px;
     color: $dark;
+    border: 2px solid $green;
   }
 }
 
