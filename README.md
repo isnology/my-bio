@@ -41,7 +41,7 @@ Design Goals
 I started with a mood board.
 [Mood board - Pintrest](https://au.pinterest.com/glenn5503/bio-web-site-portfolio/)
 
-I then used Coolers and Figma togeather for design.
+I then used Coolers and Figma together for design.
 ![My colours](assets/images/coolers.png?raw=true "My colours")
 
 ![My design](assets/images/figma.png?raw=true "My design")
@@ -66,7 +66,7 @@ proved to have its own problems, so I switch back to SASS and used flex for layo
 
 I had lots of problems with the "contact me" email system. I used FORMSPREE as it delivers the email into your mailbox.
 I found it only works from a server hosted web page and on the mobile after a lot of stuffing around to get the 
-format of the input fields consistem between the browser and the phone. It also turns out that if you save an icon to
+format of the input fields consistent between the browser and the phone. It also turns out that if you save an icon to
  your desktop to make the web page look like an app the email doesn't work, but it does if used within the browser.
  
 I also struggled with what content to put in the site and the design aspect of the site.
@@ -84,6 +84,7 @@ What I learned
 - don't use PostCSS 'lost'
 - flex works well if you keep it simple
 - Use Rails or Node for web sites.
+- Need more experience at design.
 
              
  
