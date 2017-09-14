@@ -221,6 +221,14 @@ section {
   }
 }
 
+h1 {
+  font-family: 'Tauri', sans-serif;
+  font-size: 40px;
+  padding: 5px 5px 5px 0;
+  color: $darkest;
+  font-weight: bold;
+}
+
 h2 {
   font-family: 'Tauri', sans-serif;
   font-size: 30px;
@@ -245,6 +253,7 @@ h2 {
   h2 {
     width: 100%;
     text-align: center;
+    padding: 5px 0 5px 0;
   }
 
   .content-flex {
@@ -299,22 +308,19 @@ h2 {
   display: block;
   background: $green;
   color: $white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px 10px 0px;
 
   h2 {
-    width: 100%;
-    padding: 5px 0 5px 0;
+    width: 95%;
+    padding: 5px;
   }
-
-
 
   h3 {
     color: $dark;
   }
 
   h4 {
-    width: 100%;
+    width: 99%;
     color: $dark;
     text-align: right;
   }
@@ -324,14 +330,13 @@ h2 {
   display: block;
   background: $green;
   color: $white;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   border-top: 3px solid $light;
   border-bottom: 3px solid $light;
 
-
   h2 {
-    width: 100%;
-    padding: 5px 0 5px 0;
+    width: 95%;
+    padding: 5px;
   }
 
   .content-flex > h2 {
@@ -343,7 +348,7 @@ h2 {
   }
 
   h4 {
-    width: 100%;
+    width: 95%;
     color: $dark;
     text-align: right;
   }

@@ -202,6 +202,13 @@ section {
     font-family: 'Montserrat', sans-serif;
     padding: 5px; }
 
+h1 {
+  font-family: 'Tauri', sans-serif;
+  font-size: 40px;
+  padding: 5px 5px 5px 0;
+  color: #271522;
+  font-weight: bold; }
+
 h2 {
   font-family: 'Tauri', sans-serif;
   font-size: 30px;
@@ -220,7 +227,8 @@ h2 {
   color: #89937C; }
   .sect2 h2 {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 5px 0 5px 0; }
   .sect2 .content-flex figure {
     text-align: center; }
   .sect2 .content-flex img {
@@ -252,15 +260,14 @@ h2 {
   display: block;
   background: #89937C;
   color: #F2F2F2;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding: 10px 0px 10px 0px; }
   .sect3 h2 {
-    width: 100%;
-    padding: 5px 0 5px 0; }
+    width: 95%;
+    padding: 5px; }
   .sect3 h3 {
     color: #5D4B52; }
   .sect3 h4 {
-    width: 100%;
+    width: 99%;
     color: #5D4B52;
     text-align: right; }
 
@@ -268,18 +275,18 @@ h2 {
   display: block;
   background: #89937C;
   color: #F2F2F2;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   border-top: 3px solid #C1AE9F;
   border-bottom: 3px solid #C1AE9F; }
   .sect4 h2 {
-    width: 100%;
-    padding: 5px 0 5px 0; }
+    width: 95%;
+    padding: 5px; }
   .sect4 .content-flex > h2 {
     text-align: center; }
   .sect4 h3 {
     color: #5D4B52; }
   .sect4 h4 {
-    width: 100%;
+    width: 95%;
     color: #5D4B52;
     text-align: right; }
 

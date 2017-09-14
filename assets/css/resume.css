@@ -132,7 +132,8 @@ header {
     font-size: 38px;
     padding: 10px;
     color: #89937C;
-    font-weight: bold; }
+    font-weight: bold;
+    width: 100%; }
 
 .content {
   -webkit-box-flex: 1;
@@ -192,10 +193,17 @@ section {
     font-family: 'Montserrat', sans-serif;
     padding: 5px; }
 
+h1 {
+  font-family: 'Tauri', sans-serif;
+  font-size: 40px;
+  padding: 5px 0 5px 0;
+  color: #271522;
+  font-weight: bold; }
+
 h2 {
   font-family: 'Tauri', sans-serif;
-  font-size: 30px;
-  padding: 5px 5px 5px 7px;
+  font-size: 25px;
+  padding: 5px 0 5px 0;
   color: #5D4B52; }
 
 .sect3 {
