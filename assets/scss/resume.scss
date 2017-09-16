@@ -216,7 +216,7 @@ h1 {
   font-family: 'Tauri', sans-serif;
   font-size: 40px;
   padding: 5px 0 5px 0;
-  color: $darkest;
+  color: $dark;
   font-weight: bold;
 }
 
@@ -258,12 +258,12 @@ h2 {
   border-top: 3px solid $light;
   border-bottom: 3px solid $light;
 
-  h2 {
+  h1 {
     width: 100%;
     padding: 5px 0 5px 0;
   }
 
-  .content-flex > h2 {
+  .content-flex > h1 {
     text-align: center;
   }
 
@@ -285,7 +285,7 @@ footer {
   padding-top: 10px;
   background: $white;
 
-  h2 {
+  h1 {
     width: 100%;
     text-align: center;
   }
@@ -304,6 +304,7 @@ footer {
       margin: 5px;
       width: 95%;
       border: none;
+      color: $dark;
       background: $white;
     }
 
@@ -312,6 +313,7 @@ footer {
       margin: 5px;
       width: 95%;
       border: none;
+      color: $dark;
       background: $white;
     }
 

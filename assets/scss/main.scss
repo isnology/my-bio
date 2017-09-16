@@ -225,7 +225,7 @@ h1 {
   font-family: 'Tauri', sans-serif;
   font-size: 40px;
   padding: 5px 5px 5px 0;
-  color: $darkest;
+  color: $dark;
   font-weight: bold;
 }
 
@@ -250,8 +250,8 @@ h2 {
   background: $purewhite;
   color: $green;
 
-  h2 {
-    width: 100%;
+  h1 {
+    width: 98%;
     text-align: center;
     padding: 5px 0 5px 0;
   }
@@ -310,7 +310,7 @@ h2 {
   color: $white;
   padding: 10px 0px 10px 0px;
 
-  h2 {
+  h1 {
     width: 95%;
     padding: 5px;
   }
@@ -334,12 +334,12 @@ h2 {
   border-top: 3px solid $light;
   border-bottom: 3px solid $light;
 
-  h2 {
+  h1 {
     width: 95%;
     padding: 5px;
   }
 
-  .content-flex > h2 {
+  .content-flex > h1 {
     text-align: center;
   }
 
@@ -361,7 +361,7 @@ footer {
   padding-top: 10px;
   background: $bground;
 
-  h2 {
+  h1 {
     width: 100%;
     text-align: center;
   }
@@ -380,7 +380,7 @@ footer {
       margin: 5px;
       width: 95%;
       border: none;
-      color: $darkest;
+      color: $dark;
       background: $bground;
     }
 
@@ -389,7 +389,7 @@ footer {
       margin: 5px;
       width: 95%;
       border: none;
-      color: $darkest;
+      color: $dark;
       background: $bground;
     }
 

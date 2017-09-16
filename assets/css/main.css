@@ -206,7 +206,7 @@ h1 {
   font-family: 'Tauri', sans-serif;
   font-size: 40px;
   padding: 5px 5px 5px 0;
-  color: #271522;
+  color: #5D4B52;
   font-weight: bold; }
 
 h2 {
@@ -225,8 +225,8 @@ h2 {
   display: block;
   background: #FFFFFF;
   color: #89937C; }
-  .sect2 h2 {
-    width: 100%;
+  .sect2 h1 {
+    width: 98%;
     text-align: center;
     padding: 5px 0 5px 0; }
   .sect2 .content-flex figure {
@@ -261,7 +261,7 @@ h2 {
   background: #89937C;
   color: #F2F2F2;
   padding: 10px 0px 10px 0px; }
-  .sect3 h2 {
+  .sect3 h1 {
     width: 95%;
     padding: 5px; }
   .sect3 h3 {
@@ -278,10 +278,10 @@ h2 {
   padding: 10px 0 10px 0;
   border-top: 3px solid #C1AE9F;
   border-bottom: 3px solid #C1AE9F; }
-  .sect4 h2 {
+  .sect4 h1 {
     width: 95%;
     padding: 5px; }
-  .sect4 .content-flex > h2 {
+  .sect4 .content-flex > h1 {
     text-align: center; }
   .sect4 h3 {
     color: #5D4B52; }
@@ -304,7 +304,7 @@ footer {
   width: 100%;
   padding-top: 10px;
   background: #C7AF8E; }
-  footer h2 {
+  footer h1 {
     width: 100%;
     text-align: center; }
   footer form {
@@ -330,14 +330,14 @@ footer {
       margin: 5px;
       width: 95%;
       border: none;
-      color: #271522;
+      color: #5D4B52;
       background: #C7AF8E; }
     footer form textarea {
       padding: 2px;
       margin: 5px;
       width: 95%;
       border: none;
-      color: #271522;
+      color: #5D4B52;
       background: #C7AF8E; }
     footer form div {
       border: 2px solid #89937C;
