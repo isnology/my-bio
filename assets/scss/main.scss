@@ -205,35 +205,63 @@ header {
   margin: 0 auto;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
-  color: $white;
-  background: $bground;
-  z-index: -1;
-
-  p {
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px;
-  }
+p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 0 5px 0;
 }
 
 h1 {
   font-family: 'Tauri', sans-serif;
-  font-size: 40px;
-  padding: 5px 5px 5px 0;
+  font-size: 30px;
   color: $dark;
   font-weight: bold;
 }
 
 h2 {
   font-family: 'Tauri', sans-serif;
-  font-size: 30px;
-  padding: 5px 5px 5px 7px;
+  font-size: 20px;
   color: $dark;
+}
+
+h3 {
+  color: $dark;
+}
+
+h4 {
+  color: $dark;
+  text-align: right;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: calc(100% - 10px);
+  padding: 10px 5px 10px 5px;
+  height: auto;
+  color: $white;
+  background: $bground;
+  z-index: -1;
+
+  p {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  h4 {
+    width: 100%;
+  }
 }
 
 #cont2 {
@@ -251,9 +279,8 @@ h2 {
   color: $green;
 
   h1 {
-    width: 98%;
     text-align: center;
-    padding: 5px 0 5px 0;
+    padding-bottom: 15px;
   }
 
   .content-flex {
@@ -308,57 +335,24 @@ h2 {
   display: block;
   background: $green;
   color: $white;
-  padding: 10px 0px 10px 0px;
-
-  h1 {
-    width: 95%;
-    padding: 5px;
-  }
-
-  h3 {
-    color: $dark;
-  }
-
-  h4 {
-    width: 99%;
-    color: $dark;
-    text-align: right;
-  }
 }
 
 .sect4 {
   display: block;
   background: $green;
   color: $white;
-  padding: 10px 0 10px 0;
   border-top: 3px solid $light;
   border-bottom: 3px solid $light;
 
   h1 {
-    width: 95%;
-    padding: 5px;
-  }
-
-  .content-flex > h1 {
     text-align: center;
-  }
-
-  h3 {
-    color: $dark;
-  }
-
-  h4 {
-    width: 95%;
-    color: $dark;
-    text-align: right;
+    padding-bottom: 15px;
   }
 }
 
 footer {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding-top: 10px;
   background: $bground;
 
   h1 {

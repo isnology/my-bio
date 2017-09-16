@@ -172,6 +172,28 @@ header {
   max-width: 800px;
   margin: 0 auto; }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 0 5px 0; }
+
+h1 {
+  font-family: 'Tauri', sans-serif;
+  font-size: 28px;
+  color: #5D4B52;
+  font-weight: bold; }
+
+h2 {
+  font-family: 'Tauri', sans-serif;
+  font-size: 20px;
+  color: #5D4B52; }
+
+h3 {
+  color: #5D4B52; }
+
+h4 {
+  color: #5D4B52;
+  text-align: right; }
+
 section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -184,62 +206,37 @@ section {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  width: 100%;
+  width: calc(100% - 10px);
+  padding: 10px 5px 10px 5px;
   height: auto;
   color: #F2F2F2;
   background: #C7AF8E;
   z-index: -1; }
   section p {
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px; }
-
-h1 {
-  font-family: 'Tauri', sans-serif;
-  font-size: 40px;
-  padding: 5px 0 5px 0;
-  color: #5D4B52;
-  font-weight: bold; }
-
-h2 {
-  font-family: 'Tauri', sans-serif;
-  font-size: 25px;
-  padding: 5px 0 5px 0;
-  color: #5D4B52; }
+    width: 100%; }
+  section h1 {
+    width: 100%; }
+  section h2 {
+    width: 100%; }
+  section h3 {
+    width: 100%; }
+  section h4 {
+    width: 100%; }
 
 .sect3 {
   display: block;
   background: #F2F2F2;
-  color: #89937C;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  .sect3 h2 {
-    width: 100%;
-    padding: 5px 0 5px 0; }
-  .sect3 h3 {
-    color: #5D4B52; }
-  .sect3 h4 {
-    width: 100%;
-    color: #5D4B52;
-    text-align: right; }
+  color: #89937C; }
 
 .sect4 {
   display: block;
   background: #F2F2F2;
   color: #89937C;
-  padding: 10px 0 10px 0;
   border-top: 3px solid #C1AE9F;
   border-bottom: 3px solid #C1AE9F; }
   .sect4 h1 {
-    width: 100%;
-    padding: 5px 0 5px 0; }
-  .sect4 .content-flex > h1 {
-    text-align: center; }
-  .sect4 h3 {
-    color: #5D4B52; }
-  .sect4 h4 {
-    width: 100%;
-    color: #5D4B52;
-    text-align: right; }
+    text-align: center;
+    padding-bottom: 15px; }
 
 footer {
   display: -webkit-box;
@@ -252,8 +249,6 @@ footer {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  padding-top: 10px;
   background: #F2F2F2; }
   footer h1 {
     width: 100%;

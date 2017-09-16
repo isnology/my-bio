@@ -196,93 +196,88 @@ header {
   margin: 0 auto;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
-  color: $white;
-  background: $bground;
-  z-index: -1;
-
-  p {
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px;
-  }
+p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 0 5px 0;
 }
 
 h1 {
   font-family: 'Tauri', sans-serif;
-  font-size: 40px;
-  padding: 5px 0 5px 0;
+  font-size: 28px;
   color: $dark;
   font-weight: bold;
 }
 
 h2 {
   font-family: 'Tauri', sans-serif;
-  font-size: 25px;
-  padding: 5px 0 5px 0;
+  font-size: 20px;
   color: $dark;
+}
+
+h3 {
+  color: $dark;
+}
+
+h4 {
+  color: $dark;
+  text-align: right;
+}
+
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: calc(100% - 10px);
+  padding: 10px 5px 10px 5px;
+  height: auto;
+  color: $white;
+  background: $bground;
+  z-index: -1;
+
+  p {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  h4 {
+    width: 100%;
+  }
 }
 
 .sect3 {
   display: block;
   background: $white;
   color: $green;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  h2 {
-    width: 100%;
-    padding: 5px 0 5px 0;
-  }
-
-  h3 {
-    color: $dark;
-  }
-
-  h4 {
-    width: 100%;
-    color: $dark;
-    text-align: right;
-  }
 }
 
 .sect4 {
   display: block;
   background: $white;
   color: $green;
-  padding: 10px 0 10px 0;
   border-top: 3px solid $light;
   border-bottom: 3px solid $light;
 
   h1 {
-    width: 100%;
-    padding: 5px 0 5px 0;
-  }
-
-  .content-flex > h1 {
     text-align: center;
-  }
-
-  h3 {
-    color: $dark;
-  }
-
-  h4 {
-    width: 100%;
-    color: $dark;
-    text-align: right;
+    padding-bottom: 15px;
   }
 }
 
 footer {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding-top: 10px;
   background: $white;
 
   h1 {
