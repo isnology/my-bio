@@ -1,6 +1,9 @@
 My Bio
 =
 
+in development run -> ruby -run -e httpd . -p 3100
+and (from a second command line) run -> gulp
+
 My Design Resources
 -
 
