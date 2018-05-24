@@ -19,6 +19,11 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Montserrat|Tauri" rel="stylesheet">
+    <script type="text/javascript">
+      function unCheck() {
+        document.getElementById("nav-check").value = false;
+      }
+    </script>
     <title>My Bio</title>
   </head>
   <body>
@@ -34,13 +39,13 @@
           <span></span>
         </label>
         <div class="menu">
-          <a href="#cont1">About Me</a>
-          <a href="#cont2">My Passion</a>
-          <a href="#cont3">Tech Stacks</a>
-          <a href="#cont4">Resume</a>
-          <a href="https://www.linkedin.com/in/glenn-marks-a5574b3/" target="_blank">Linked In</a>
-          <a href="https://github.com/isnology/my-bio" target="_blank">GitHub</a>
-          <a href="#footer1">Contact</a>
+          <a href="#cont1" onClick="unCheck()">About Me</a>
+          <a href="#cont2" onClick="unCheck()">My Passion</a>
+          <a href="#cont3" onClick="unCheck()">Tech Stacks</a>
+          <a href="#cont4" onClick="unCheck()">Resume</a>
+          <a href="https://www.linkedin.com/in/glenn-marks-a5574b3/" target="_blank" onClick="unCheck()">Linked In</a>
+          <a href="https://github.com/isnology/my-bio" target="_blank" onClick="unCheck()">GitHub</a>
+          <a href="#footer1" onClick="unCheck()">Contact</a>
         </div>
       </nav>
       <img class="pic" src="assets/images/water.jpeg" alt="wave on the sand">

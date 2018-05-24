@@ -20,7 +20,7 @@ body {
 :target {
   display: block;
   position: relative;
-  top: -4rem;
+  top: 0;
   visibility: hidden; }
 
 .pic {
@@ -98,10 +98,7 @@ body {
   height: 62rem;
   top: -62rem;
   background: #89937C;
-  z-index: 2;
-  /*a:active > .menu {
-    transform: translateY(-62rem);
-  }*/ }
+  z-index: 2; }
   .menu a:first-child {
     margin-top: 4rem; }
   .menu a {
@@ -457,6 +454,8 @@ footer {
     border: 0.2rem solid #89937C; }
 
 @media (min-width: 768px) {
+  :target {
+    top: -4rem; }
   .content {
     max-width: 60rem; }
   .heading-first {

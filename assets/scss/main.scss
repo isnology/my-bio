@@ -27,7 +27,7 @@ body {
 :target {
   display: block;
   position: relative;
-  top: -4rem;
+  top: 0;
   visibility: hidden;
 }
 
@@ -135,9 +135,6 @@ body {
     padding-bottom: .5rem;
     border-bottom: .1rem solid $bground;
   }
-  /*a:active > .menu {
-    transform: translateY(-62rem);
-  }*/
 }
 
 #nav-check ~ .menu {
@@ -483,6 +480,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+
+  :target {
+    top: -4rem;
+  }
 
   .content {
     max-width: 60rem;
