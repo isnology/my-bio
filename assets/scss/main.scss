@@ -262,16 +262,16 @@ p {
   color: $green;
   font-weight: bold;
 
-  animation: moveInBottom .5s ease-out .5s;
+  animation: moveInBottom 1.5s ease-out;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-20rem); /* rotate(0); */
+    transform: translateX(-20rem);
   }
   75% {
-    transform: translateX(1rem); /* rotate(20deg); */
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
@@ -296,14 +296,15 @@ p {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem) rotate(0);
+    transform: rotate(0);
   }
   99% {
-    transform: translate(0) rotate(359deg);
+    opacity: .95;
+    transform: rotate(1439deg);
   }
   100% {
     opacity: 1;
-    transform: translate(0) rotate(360deg);
+    transform: rotate(1440deg);
   }
 }
 

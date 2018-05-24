@@ -235,19 +235,17 @@ p {
   font-size: 3.8rem;
   color: #89937C;
   font-weight: bold;
-  -webkit-animation: moveInBottom .5s ease-out .5s;
-  animation: moveInBottom .5s ease-out .5s; }
+  -webkit-animation: moveInBottom 1.5s ease-out;
+  animation: moveInBottom 1.5s ease-out; }
 
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20rem);
-    transform: translateX(-20rem);
-    /* rotate(0); */ }
+    transform: translateX(-20rem); }
   75% {
     -webkit-transform: translateX(1rem);
-    transform: translateX(1rem);
-    /* rotate(20deg); */ }
+    transform: translateX(1rem); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
@@ -257,12 +255,10 @@ p {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20rem);
-    transform: translateX(-20rem);
-    /* rotate(0); */ }
+    transform: translateX(-20rem); }
   75% {
     -webkit-transform: translateX(1rem);
-    transform: translateX(1rem);
-    /* rotate(20deg); */ }
+    transform: translateX(1rem); }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
@@ -297,28 +293,30 @@ p {
 @-webkit-keyframes moveInBottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(3rem) rotate(0);
-    transform: translateY(3rem) rotate(0); }
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
   99% {
-    -webkit-transform: translate(0) rotate(359deg);
-    transform: translate(0) rotate(359deg); }
+    opacity: .95;
+    -webkit-transform: rotate(1439deg);
+    transform: rotate(1439deg); }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0) rotate(360deg);
-    transform: translate(0) rotate(360deg); } }
+    -webkit-transform: rotate(1440deg);
+    transform: rotate(1440deg); } }
 
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(3rem) rotate(0);
-    transform: translateY(3rem) rotate(0); }
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
   99% {
-    -webkit-transform: translate(0) rotate(359deg);
-    transform: translate(0) rotate(359deg); }
+    opacity: .95;
+    -webkit-transform: rotate(1439deg);
+    transform: rotate(1439deg); }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0) rotate(360deg);
-    transform: translate(0) rotate(360deg); } }
+    -webkit-transform: rotate(1440deg);
+    transform: rotate(1440deg); } }
 
 h2 {
   font-family: 'Tauri', sans-serif;
