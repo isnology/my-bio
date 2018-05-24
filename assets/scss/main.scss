@@ -298,9 +298,13 @@ p {
     opacity: 0;
     transform: rotate(0);
   }
-  99% {
+  80% {
     opacity: .95;
-    transform: rotate(1439deg);
+    transform: rotate(1455deg);
+  }
+  82% {
+    opacity: .95;
+    transform: rotate(1455deg);
   }
   100% {
     opacity: 1;
