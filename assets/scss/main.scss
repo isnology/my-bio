@@ -116,6 +116,7 @@ body {
   height: 62rem;
   top: -62rem;
   background: $green;
+  border-bottom: .1rem solid $darkest;
   z-index: 2;
 
   a:first-child {
