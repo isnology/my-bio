@@ -429,6 +429,12 @@ section {
   display: block;
   background: $green;
   color: $white;
+  .content-block {
+    padding-top: 1rem;
+  }
+  h1 {
+    padding-bottom: 1rem;
+  }
 }
 
 .sect4 {
@@ -440,10 +446,10 @@ section {
 
   h1 {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
   .content-block {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 }
 
