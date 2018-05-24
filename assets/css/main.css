@@ -90,6 +90,18 @@ body {
   width: 0;
   left: 50%; }
 
+.home {
+  display: block;
+  position: fixed;
+  top: .9rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  -webkit-clip-path: polygon(0% 45%, 50% 0%, 100% 45%, 88% 45%, 88% 100%, 12% 100%, 12% 45%);
+  clip-path: polygon(0% 45%, 50% 0%, 100% 45%, 88% 45%, 88% 100%, 12% 100%, 12% 45%);
+  background: #271522;
+  z-index: 3; }
+
 .menu {
   font-family: 'Advent Pro', sans-serif;
   display: block;
@@ -99,7 +111,7 @@ body {
   top: -62rem;
   background: #89937C;
   border-bottom: 0.1rem solid #271522;
-  z-index: 2; }
+  z-index: 4; }
   .menu a:first-child {
     margin-top: 4rem; }
   .menu a {
