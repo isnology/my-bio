@@ -7,6 +7,7 @@ $bground: #C7AF8E;
 $white: #F2F2F2;
 $purewhite: #FFFFFF;
 
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -116,7 +117,7 @@ body {
   width: 2rem;
   height: 2rem;
   clip-path: polygon(0% 45%, 50% 0%, 100% 45%, 88% 45%, 88% 100%, 12% 100%, 12% 45%);
-  background: $darkest;
+  background: rgba($darkest, .5);
   z-index: 3;
 }
 
@@ -251,16 +252,17 @@ p {
 .heading-box-sub {
   position: absolute;
   top: 48%;
-  left: 80%;
+  left: 75%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .heading-title {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.7rem;
   color: $green;
   font-weight: bold;
+  letter-spacing: -.15rem;
 
   animation: moveInBottom 1.5s ease-out;
 }
@@ -552,8 +554,6 @@ footer {
       padding-bottom: 0;
       border-bottom: 0;
     }
-    transform: rotate(0deg);
-    transition: 0s;
   }
 }
 

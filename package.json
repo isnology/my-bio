@@ -1,0 +1,14 @@
+{
+  "name": "MyBio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:isnology/my-bio.git",
+  "author": "isnology <glenn@isnology.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass assets/scss/main.scss assets/css/main.css -w"
+  }
+}

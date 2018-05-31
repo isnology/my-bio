@@ -1,8 +1,29 @@
 My Bio
 =
 
-in development run -> ruby -r un -e httpd . -p 3005
-and (from a second command line) run -> gulp
+Changed to use yarn instead of gulp
+```
+yarn add node-sass
+yarn global add live-server 
+```
+(only need to add live-server once for all projects as its global)
+
+in package.json
+```
+"scripts": {
+  "compile:sass": "node-sass assets/scss/main.scss assets/css/main.css -w"
+}
+```
+
+from the application root on different command lines
+```
+yarn compile:sass
+live-server 
+```
+
+instead of:- 
+ruby -r un -e httpd . -p 3005
+gulp
 
 My Design Resources
 -
@@ -70,7 +91,8 @@ proved to have its own problems, so I switch back to SASS and used flex for layo
 I had lots of problems with the "contact me" email system. I used FORMSPREE as it delivers the email into your mailbox.
 I found it only works from a server hosted web page and on the mobile after a lot of stuffing around to get the 
 format of the input fields consistent between the browser and the phone. It also turns out that if you save an icon to
- your desktop to make the web page look like an app the email doesn't work, but it does if used within the browser.
+ your phone desktop to make the web page look like an app the email doesn't work, but it does if used within the 
+ browser.
  
 I also struggled with what content to put in the site and the design aspect of the site.
 
