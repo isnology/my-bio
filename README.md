@@ -4,20 +4,25 @@ My Bio
 Changed to use yarn instead of gulp
 ```
 yarn add node-sass
+```
+if you don't have live-server, then load it globally for all projects, otherwise skip this step
+```
 yarn global add live-server 
 ```
-(only need to add live-server once for all projects as its global)
 
 in package.json
 ```
 "scripts": {
-  "compile:sass": "node-sass assets/scss/main.scss assets/css/main.css -w"
+  "compile:sass": "node-sass assets/scss/*.scss assets/css/main.css -w"
 }
 ```
 
-from the application root on different command lines
+from the application root in a new command lines
 ```
 yarn compile:sass
+```
+from the application root in a new command lines
+```
 live-server 
 ```
 
