@@ -13,13 +13,13 @@ yarn global add live-server
 in package.json
 ```
 "scripts": {
-  "compile:sass": "node-sass assets/scss/*.scss assets/css/main.css -w"
+  "sass": "node-sass assets/scss/*.scss assets/css/main.css -w"
 }
 ```
 
 from the application root in a new command lines
 ```
-yarn compile:sass
+yarn sass
 ```
 from the application root in a new command lines
 ```

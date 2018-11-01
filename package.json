@@ -9,6 +9,6 @@
     "node-sass": "^4.9.0"
   },
   "scripts": {
-    "compile:sass": "node-sass assets/scss/main.scss assets/css/main.css -w"
+    "sass": "node-sass assets/scss/main.scss assets/css/main.css -w"
   }
 }
