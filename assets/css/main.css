@@ -401,7 +401,7 @@ footer {
     #nav-check:checked ~ .menu a,
     #nav-check ~ .menu a {
       display: inline-block;
-      width: 13rem;
+      width: 11rem;
       height: 3rem;
       text-align: center;
       text-decoration: none;
